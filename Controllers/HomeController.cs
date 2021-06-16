@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PC4.Models;
+using PC4.Models.PC4.Models;
 
 namespace PC4.Controllers
 {
@@ -14,7 +15,7 @@ namespace PC4.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly Practica4Context _context;
 
-        public HomeController(ILogger<HomeController> logger, Practica4Context context)
+        public HomeController(ILogger<HomeController> logger, PC4Context context)
         {
             _logger = logger;
             _context = context;
